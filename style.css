@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+
+:root {
+    --primary-ff: 'Lato', sans-serif;
+}
+
+* {
+    font-family: var(--primary-ff);
+}
+
+body {
+    margin: auto;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    height: 55vh;
+    background: url('https://images.unsplash.com/photo-1534095256953-6249f0cd07f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80') no-repeat center center;
+    background-size: cover;
+}
+
+.image-description {
+    padding: 2rem 0 5rem 2rem;
+    height:65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background-color: #520175;
+    color: #ffffff;
+}
+
+
+
+.banner-annexure {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.banner-heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.banner-description {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.banner-button {
+    padding: 1rem;
+    width: 8rem;
+    height: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 2rem 2rem 2rem 2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.banner-button:hover {
+    background-color: #ffffff;
+    color: #520175;
+    font-weight: 800;
+}
+
+.banner-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: #e8e8e8;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.card {
+    width: 20rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.card-banner {
+    width: 20rem;
+    height: 10rem;
+    background: url('https://images.unsplash.com/photo-1582169476285-33a3e0c29b67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=766&q=80') no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+.card-body {
+    padding: 1rem 1.5rem 1rem 1.2rem;
+    overflow: hidden;
+}
+
+.card-body h2 {
+    margin-top: 0;
+}
+
+.card-text {
+    height: 5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+hr {
+    height: 1px;
+    width: 90%;
+    background-color: #e8e8e8;
+    margin: 20px auto;
+    border-radius: 1px;
+    display: block;
+}
+
+.card-footer {
+    display: flex;
+    padding: 0 0 1rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (min-width:140px) and (max-width:375px) {
+    .banner {
+        display: none;
+    }
+
+    .banner-items {
+        padding: 2rem;
+    }
+
+    .card {
+        width: 18rem;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:476px) {
+    .banner {
+        display: none;
+    }
+
+    .banner-items {
+        padding: 2.5rem;
+    }
+
+    .card {
+        width: 25rem;
+    }
+
+    .card-banner {
+        width: 25rem;
+    }
+}
+
+@media screen and (min-width:476px) and (max-width:640px) {
+
+    .banner {
+        display: none;
+    }
+
+    .banner-items {
+        padding: 2.5rem;
+    }
+
+    .card {
+        width: 30rem;
+    }
+
+    .card-banner {
+        width: 30rem;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:768px) {
+    .image-container {
+        width: 100%;
+        height: 55vh;
+        background-size: cover;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+}
